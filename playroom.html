@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BingoUnimet|Partida</title>
+    <script src="script.js"></script>   
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body onload="Iniciar_partida()">
+    <div class="bingo-container"> 
+		<h1>Partida de Bingo</h1> 
+        <select  id="opciones" name="opciones" onchange="Mostrar_carton()" disabled>
+            <option value="opcion1">Jugador 1</option>
+            <option value="opcion2">Jugador 2</option>
+            <option value="opcion3">Jugador 3</option>
+            <option value="opcion4">Jugador 4</option>
+          </select>
+          <h2 id="usuario">Jugador: </h2>
+		<div class="player-cards"> 
+			<div class="player-card" id="carton"> 
+			</div> 
+		</div> 
+		<div class="controls"> 
+			<button id="jugar_numero"  onclick="Jugar_turno()" disabled> 
+				Sacar Numero 
+			</button> 
+            <h2 id="Numero_jugado">Numero: </h2>
+            <h2 id="turnos">Turnos Restantes: 25</h2>
+		</div> 
+</body>
+</html>

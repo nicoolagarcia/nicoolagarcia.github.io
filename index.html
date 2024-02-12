@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BingoUnimet</title>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body onload="Leaderboard()">
+		<header>
+			<h1 id="tituloBingo">BingoUnimet</h1>
+		</header>
+		<div>
+			<p>ingrese el nombre de usuario de los jugadores:</p>
+			<section>
+				<div>
+					<label for="user1">usuario 1:</label>
+					<input type="text" id="user1" />
+				</div>
+				<div>
+					<label for="user2">usuario 2:</label>
+					<input type="text" id="user2" />
+				</div>
+				<div>
+					<label for="user3">usuario 3:</label>
+					<input type="text" id="user3" />
+				</div>
+				<div>
+					<label for="user4">usuario 4:</label>
+					<input type="text" id="user4" />
+				</div>
+			</section>
+		</div>
+		<div>
+			<h3>Modo de Juego</h3>
+			<p>selecciona el tamaño de carton:</p>
+			<section>
+				<button onclick="Empezar_partida(3)">3x3</button>
+				<button onclick="Empezar_partida(4)">4x4</button>
+				<button onclick="Empezar_partida(5)">5x5</button>
+			</section>
+		</div>
+		<div>
+			<h3>LEADERBOARD</h3>
+			<section>
+				<table>
+					<thead>
+						<tr>
+							<th>Posición</th>
+							<th>Jugador</th>
+							<th>Victorias</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="fila1">
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="fila2">
+							<td>2</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="fila3">
+							<td>3</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="fila4">
+							<td>4</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</div>
+	</body>
+</html>
